@@ -95,9 +95,25 @@ function purchaseItem( itemId, quant){
             console.log("Purchase complete!");
             var total = item.price * quant;
             console.log('Total comes to:', total,"\n")
+            updateProductSales(itemId, total);
             reset();
         }
     );
+}
+function updateProductSales(itemId, total){
+    total = connection.escape( total );
+    var query = connection.query(
+        "UPDATE products SET product_sales=product_sales + "+total+" WHERE ?",
+        [
+            {
+                item_id: itemId
+            }
+        ],
+        function (err, res) {
+            if( err ) console.log( err )
+        }
+    );
+    console.log( query.sql )
 }
 function reset(){
     items = null;

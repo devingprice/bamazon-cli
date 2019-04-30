@@ -9,3 +9,13 @@ VALUES ("HELM Audio True Headphones", "Electronics", 99.99, 100),
 ("REESE'S Nutrageous Chocolate Peanut Butter Candy Bar (Pack of 18)","Grocery & Gourmet Food", 19.90, 10),
 ("Franklin Sports Table Tennis To-Go","Sports & Outdoors", 17.22, 3),
 ("The Pragmatic Programmer: From Journeyman to Master","Books", 37.25, 5);
+
+INSERT INTO departments (department_name, over_head_costs)
+VALUES ("Electronics", 1000),
+("Cell Phones & Accessories", 500),
+("Sports & Outdoors", 2000),
+("Amazon Devices", 400),
+("Prime Wardrobe", 400),
+("Grocery & Gourmet Food", 1500),
+("Books", 200);
+
