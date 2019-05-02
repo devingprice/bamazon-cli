@@ -113,7 +113,7 @@ function updateProductSales(itemId, total){
             if( err ) console.log( err )
         }
     );
-    console.log( query.sql )
+    //console.log( query.sql )
 }
 function reset(){
     items = null;
