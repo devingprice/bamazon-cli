@@ -94,7 +94,7 @@ function addToInventory(){
     ]).then(function (answers) {
         var itemId = parseInt(answers.itemId);
         var quant = answers.quant;
-        var inStock = checkIfInStock( itemId , quant )
+        //var inStock = checkIfInStock( itemId , quant )
         
         replenishStock( itemId, quant );
     })
