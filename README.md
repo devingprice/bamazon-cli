@@ -6,6 +6,16 @@
 ![Inquirer](https://img.shields.io/badge/Library-Inquirer-orange.svg)
 ![MySQL](https://img.shields.io/badge/Library-MySQL-orange.svg)
 
-<p align="center"> </p>
+<p align="center"> Bamazon is a cli tool to make purchases, add items, and check stock & sales data. </p>
 
-# bamazon-cli
+
+## Installation
+
+```bash
+git clone https://github.com/devingprice/bamazon-cli
+npm i
+```
+
+## Running bamazon
+
+<p align="center"><img src="https://github.com/devingprice/bamazon-cli/blob/master/images/customer.gif"></p>
